@@ -13,4 +13,14 @@ module.exports = defineConfig({
       cookieSecret: process.env.COOKIE_SECRET || 'supersecret',
     },
   },
+  modules: [
+    {
+      key: 'cart',
+      disable: true,
+    },
+    {
+      key: 'product',
+      disable: true,
+    },
+  ],
 })
